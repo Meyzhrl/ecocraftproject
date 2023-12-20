@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Menyimpan data ke dalam tabel penilaian
     $sql = "INSERT INTO penilaian (name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
 
-    if ($conn->query($sql) === TRUE) {
+    if ($conn->query($sql) ===TRUE) {
         echo "Message sent successfully!";
         echo '<script>window.location.href = "contact.html";</script>';
     } else {
