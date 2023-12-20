@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=DM+Serif+Display&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="img/logo eco.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="Collection.html">Collection</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </div>
+        <i class="fa fa-bars"  onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Karya Seni<br>Dari Sampah</h1>
+    <p>Ciptakan karya Seni<br>dari hasil mendaur ulang sampah<br>untuk menciptakan linkungan yang bersih</p>
+    <a href="about.html" class="btn-1">View More</a>
+</div> 
+</section> 
+
+
+<!-- EDUCATION -->
+
+<section class="education">
+    <h1>Jenis-Jenis Sampah</h1>
+    <div class="row">
+        <div class="education-col" onclick="showDescription('organik-description')">
+            <img src="img/Organik-.jpeg">
+            <div class="layer">
+                <h3>ORGANIK</h3>
+            </div>
+        </div>
+        <div class="education-col" onclick="showDescription('nonorganik-description')">
+            <img src="img/non-organik.jpeg">
+            <div class="layer">
+                <h3>NON ORGANIK</h3>
+            </div>
+        </div>
+    </div>
+    <p id="organik-description" class="description" style="display: none;">
+        Sampah organik adalah jenis sampah yang berasal dari sisa-sisa material yang berasal dari makhluk hidup, baik tumbuhan maupun hewan.<br>
+        Sampah organik ini mudah terurai oleh mikroorganisme seperti bakteri dan jamur.
+        Contoh sampah organik meliputi sisa makanan, daun kering, sisa sayuran, kulit buah, dan bahan-bahan organik lainnya.
+        Keberadaan sampah organik juga dapat menjadi sumber nutrisi bagi tanaman jika diuraikan secara alami.
+        Namun, jika tidak dikelola dengan baik, sampah organik juga dapat menyebabkan masalah lingkungan seperti produksi gas metana, yang dapat berkontribusi pada efek rumah kaca.
+    </p>
+    <p id="nonorganik-description" class="description" style="display: none;">
+        Sampah non-organik adalah jenis sampah yang tidak dapat diurai oleh organisme hidup dengan cepat dan alami.<br>
+        Sampah non-organik biasanya terdiri dari bahan-bahan yang sulit terurai atau tidak dapat diurai oleh proses alam, seperti plastik, kaca, logam, dan bahan kimia berbahaya.
+        Contoh sampah non-organik meliputi botol plastik, kemasan makanan, kaleng, kertas yang dilapisi plastik, dan barang-barang elektronik.
+        Sampah ini cenderung membutuhkan waktu yang lebih lama untuk terurai dan dapat menimbulkan dampak lingkungan yang serius jika tidak dikelola dengan benar.
+    </p>
+</section>
+
+<!-- COLLECTION -->
+<section class="collection">
+    <h1>COLLECTION</h1>
+    <div class="row">
+        <div class="collection-col">
+            <img src="img/tas.jpeg" alt="TAS">
+            <div class="overlay"></div>
+        </div>
+        <div class="collection-col">
+            <img src="img/pot.jpeg" alt="POT TANAMAN">
+            <div class="overlay"></div>
+        </div>
+        <div class="collection-col">
+            <img src="img/sedotan.jpeg" alt="BINGKAI">
+            <div class="overlay"></div>
+        </div>
+        <div class="collection-col">
+            <img src="img/tas unik.jpeg" alt="TAS">
+            <div class="overlay"></div>
+        </div>
+        <div class="collection-col">
+            <img src="img/bingkai sedotan.jpeg" alt="Bingkai">
+            <div class="overlay"></div>
+        </div>
+        <div class="collection-col">
+            <img src="img/pot tanaman.jpeg" alt="Pot Hias">
+            <div class="overlay"></div>
+        </div>
+        <div class="collection-col">
+            <img src="img/pot bunga.jpeg" alt="pot bunga">
+            <div class="overlay"></div>
+        </div>
+        <div class="collection-col">
+            <img src="img/tas kopi.jpeg" alt="tas">
+            <div class="overlay"></div>
+        </div>
+        <div class="collection-col">
+            <img src="img/bingkai.jpeg" alt="Bingkai">
+            <div class="overlay"></div>
+        </div>
+    </div>
+</section>
+
+<!-- PENILAIAN -->
+<section class="penilaian">
+    <h1>APA KATA MEREKA?</h1>
+    <P>......</P>
+
+    <div class="row">
+        <div class="penilaian-col">
+            <img src="img/alam.jpg">
+            <div>
+                <p>Terimakasih kak, tutorialnya sangat bagus.</p>
+                <h3>Meyda Al Zahra</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="penilaian-col">
+            <img src="img/alam.jpg">
+            <div>
+                <p>Terimakasih kak, tutorial ini sangat membantu</p>
+                <h3>Fairuz Zulia</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- vie more -->
+<section class="viemore">
+    <h1>Karya Seni dari sampah</h1>
+    <a href="contact.html" class="btn-1">CONTACT US</a>
+</section>
+
+<!-- FOOTER -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Kami memberikan cara terbaik dalam mengolah sampah</p>
+    <div class="icons">
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.instagram.com/__ecocraft/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p><i>Made with <i class="fa-regular fa-heart"></i> by EcoCraft</i></p>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
